@@ -11,14 +11,7 @@
       "headers": [
         { "key": "Content-Type", "value": "application/javascript" }
       ]
-    },
-    {
-      "source": "/videos/(.*)",
-      "headers": [
-        { "key": "Content-Type", "value": "video/mp4" }
-      ]
     }
-  ]
-}
+  }
 
 
