@@ -13,10 +13,10 @@
       ]
     },
     {
-      "static": {
-        "src": "/public/videos/*",
-        "dest": "/videos/"
-      }
+      "source": "/videos/(.*)",
+      "headers": [
+        { "key": "Content-Type", "value": "video/mp4" }
+      ]
     }
   ]
 }
