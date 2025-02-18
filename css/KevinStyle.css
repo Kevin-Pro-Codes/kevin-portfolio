@@ -88,13 +88,15 @@ z-index: 60;
   */
 }
 
+/*
 .navbar-encapsulation {
   display: flex;
-  flex-direction: column; /* Stack navbar and sub-tabs vertically */
+  flex-direction: column; 
   width: 100%;
   position: relative;
   z-index: 10;  
 }
+*/
 
 .flag-container .flag-button {
   display: inline-block;
@@ -1120,6 +1122,13 @@ p {
   height: auto; 
   margin-top: 60px;
 }
+
+
+.video-container iframe {
+ 
+  border-radius: 15px; /* Optional, not needed if overflow: hidden is applied */
+}
+
 
 video {
   width: 90%; /* Increased width for a bigger video */

@@ -183,13 +183,16 @@
 
         <a href="https://www.freecounterstat.com" class="counter" id="counter-link">
             <img src="https://counter8.optistats.ovh/private/freecounterstat.php?c=2dbkptsqtdy8zwhtxn1wa2sza5x5wku5" width="140" height="40" border="0" title="" alt="">
-          </a>
+        </a>
+
         <p class="counter-text2"data-translate="views2">vezes.</p>
 
         <!--
         <a href="https://www.freecounterstat.com" class="counter" id="counter-link">
           <img src="https://counter8.optistats.ovh/private/freecounterstat.php?c=2dbkptsqtdy8zwhtxn1wa2sza5x5wku5" width="140" height="40" border="0" title="" alt="">
         </a>
+
+        <script type="text/javascript" src="https://counter.websiteout.com/js/7/0/0/0"></script>
         -->
         
         <style>
@@ -347,6 +350,7 @@
 </div>
 
             <div class="projects-content">
+                
                 <br><br><br>
                 <p class="title">Calculadora em C++</p>
                 <br><br><br>
@@ -356,16 +360,21 @@
                     </div>
                     <br>
                     <div class="video-container">
-                        <video id="myVideo" controls>
-                            <source src="videos/1a.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
+                        <!-- Embed do YouTube -->
+                        <iframe id="myVideo" width="560" height="315" 
+                            src="https://www.youtube.com/embed/KHN6FEeoHKk" 
+                            title="YouTube video player" frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                
                         <div class="flags">
-                            <img src="/images/brazil.png" alt="Brazil Flag" class="flag br" data-video="videos/1a.mp4">
-                            <img src="/images/united-states.png" alt="US Flag" class="flag us" data-video="videos/1b.mp4">
+                            <img src="/images/brazil.png" alt="Brazil Flag" class="flag br" data-video="https://www.youtube.com/embed/KHN6FEeoHKk">
+                            <img src="/images/united-states.png" alt="US Flag" class="flag us" data-video="https://www.youtube.com/embed/7hra0auU-xM">
                         </div>
                     </div>
                 </div>
+
                 <p class="title">Diamondo Web Browser (Desktop)</p>
                 <br><br><br>
                 <div class="projects-container">
@@ -467,35 +476,12 @@
             
             <script>
                 
-                document.querySelectorAll('.flags img').forEach(flag => {
-                    flag.addEventListener('click', function() {
-                        const videoSource = this.getAttribute('data-video');
-                        const videoElement = this.closest('.video-container').querySelector('video');
-                        videoElement.querySelector('source').src = videoSource;
-                        videoElement.load();  // Reload the video with the new source
-                    });
-                });
-
-    document.querySelectorAll('.flags img').forEach(flag => {
-    flag.addEventListener('click', function() {
-        // Remove the 'active' class from all flags
-        document.querySelectorAll('.flags img').forEach(f => f.classList.remove('active'));
-
-        // Add the 'active' class to the clicked flag
-        this.classList.add('active');
-
-        // Update the video source
-        const videoSource = this.getAttribute('data-video');
-        const videoElement = this.closest('.video-container').querySelector('video');
-        videoElement.querySelector('source').src = videoSource;
-        videoElement.load();  // Reload the video with the new source
-    });
-});
-
-
-document.addEventListener('DOMContentLoaded', () => {
-    // Initially set Brazilian flag to opacity 1
+                document.addEventListener('DOMContentLoaded', () => {
+    const videoElement = document.getElementById("myVideo"); // Get the iframe
     const brazilFlag = document.querySelector('.flag.br');
+
+    // Initially set Brazilian flag to active and opacity 1
+    brazilFlag.classList.add('active');
     brazilFlag.style.opacity = '1.0';
 
     document.querySelectorAll('.flags img').forEach(flag => {
@@ -503,16 +489,16 @@ document.addEventListener('DOMContentLoaded', () => {
             // Reset opacity for all flags
             document.querySelectorAll('.flags img').forEach(f => {
                 f.style.opacity = '0.7';
+                f.classList.remove('active'); // Remove active class
             });
 
-            // Set clicked flag to opacity 1
+            // Set clicked flag to active and opacity 1
             this.style.opacity = '1.0';
+            this.classList.add('active');
 
-            // Update the video source
+            // Update the iframe's src to change the video
             const videoSource = this.getAttribute('data-video');
-            const videoElement = this.closest('.video-container').querySelector('video');
-            videoElement.querySelector('source').src = videoSource;
-            videoElement.load();  // Reload the video with the new source
+            videoElement.src = videoSource + "?autoplay=1"; // Autoplay on click
         });
     });
 });
