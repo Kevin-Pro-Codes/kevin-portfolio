@@ -1121,22 +1121,30 @@ p {
 
 
 .video-container {
-  position: relative;
-  display: flex; /* Make it a flexbox container */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  width: 100%;
-  max-width: 900px;
-  height: auto; 
-  margin-top: 60px;
+  position: relative; /* This makes the flags positioned relative to this container */
+  display: inline-block;
+  border-radius: 15px; /* Adjust the value to make the corners rounder */
+  overflow: hidden; /* Ensures content stays inside the rounded border */
+  border: 2px solid #ccc; /* Optional: adds a visible border */
+  margin-top: 35px;
 }
 
-
-.video-container iframe {
- 
-  border-radius: 15px; /* Optional, not needed if overflow: hidden is applied */
+.flags {
+  position: absolute;
+  top: 110px; /* Moves flags further down */
+  right: 10px; /* Keeps distance from the right */
+  display: flex;
+  flex-direction: column; /* Stack flags vertically */
+  gap: 8px; /* Add spacing between flags */
 }
 
+.flag {
+  width: 40px; /* Increases the width */
+  height: 35px; /* Adjust height to make them wider */
+  border-radius: 10px; /* Round corners */
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
 
 video {
   width: 90%; /* Increased width for a bigger video */
@@ -1149,19 +1157,7 @@ video {
   margin-right: 0%;
   }
   
-    .flags {
-      position: absolute;
-      top: 20%; /* Adjust relative to video container */
-      right: 20%; /* Keep it within bounds */      
-      display: flex;
-      gap: 5px;
-      border-radius: 15px;
-  }
 
-  .flag {
-      width: 40px; /* Fixed size for better control */
-      height: auto;
-  }
 
 .overall-bottom-container {
   display: grid;
