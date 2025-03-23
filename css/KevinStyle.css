@@ -753,9 +753,9 @@ p {
   text-align: center;
   border-radius: 10px;
   /* Rounded corners for the box */
-  margin-top: -80px;
+  margin-top: -120px;
   /* Ensure it stays within the flow of the document */
-  margin-bottom: -45px;
+  margin-bottom: -50px;
   word-spacing: 3px;
   line-height: 2;
 }
@@ -768,6 +768,7 @@ p {
 
 .projects-content {
   padding-left: 10px;
+  color: white;
 }
 
 .articles-container {
@@ -1117,6 +1118,16 @@ p {
   font-family: Calibri;
   word-spacing: 3px;
   line-height: 2;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column; /* Stack items on small screens */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  max-width: 100%;
 }
 
 
