@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
-
 import { motion, AnimatePresence } from 'framer-motion';
+
 
 import InitialAnim from './components/InitialAnim';
 import Anim from './components/Anim';
