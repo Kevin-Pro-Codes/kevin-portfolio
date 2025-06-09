@@ -59,9 +59,9 @@ function App() {
 
   // Gallery images
   const galleryImages = [
-    { src: "/src/assets/ss1.png", alt: "Project 1", caption: "" },
-    { src: "/src/assets/ss2.png", alt: "Project 2", caption: "" },
-    { src: "/src/assets/ss3.png", alt: "Project 3", caption: "" }
+    { src: "./assets/ss1.png", alt: "Project 1", caption: "" },
+    { src: "./assets/ss2.png", alt: "Project 2", caption: "" },
+    { src: "./assets/ss3.png", alt: "Project 3", caption: "" }
   ];
 
   // Page content components
