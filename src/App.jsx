@@ -10,9 +10,10 @@ import Footer from './components/Footer';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 
-import './Home.css';
-import './Projects.css';
-import './Contact.css';
+import './index.css';
+import './styles/Home.css';
+import './styles/Projects.css';
+import './styles/Contact.css';
 
 function App() {
   const [navVisible, setNavVisible] = useState(false);
