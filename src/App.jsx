@@ -10,7 +10,7 @@ import Footer from './components/Footer';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 
-import './styles/Home.css';
+import './Home.css';
 import './styles/Projects.css';
 import './styles/Contact.css';
 
