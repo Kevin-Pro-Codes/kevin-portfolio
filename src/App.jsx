@@ -85,7 +85,7 @@ function App() {
               </motion.div>
             </div>
             <div className="image-text-box">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed sit amet tellus nec nisi dictum efficitur. Fusce at diam vitae metus convallis tincidunt. Aenean vehicula, lorem nec posuere hendrerit, justo velit convallis neque, a fermentum libero metus in ligula.</p>
+              <p>zxcascaswLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed sit amet tellus nec nisi dictum efficitur. Fusce at diam vitae metus convallis tincidunt. Aenean vehicula, lorem nec posuere hendrerit, justo velit convallis neque, a fermentum libero metus in ligula.</p>
             </div>
           </div>
         </section>
