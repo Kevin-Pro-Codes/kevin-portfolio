@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import './App.css';
+
 import { motion, AnimatePresence } from 'framer-motion';
 
 import InitialAnim from './components/InitialAnim';
@@ -11,7 +11,9 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 
 import './index.css';
+import './App.css';
 import './styles/Home.css';
+import './styles/Gallery.css';
 import './styles/Projects.css';
 import './styles/Contact.css';
 
