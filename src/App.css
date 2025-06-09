@@ -1,0 +1,217 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+/*
+@media (min-width: 1001px) {
+ body {
+    zoom: 1.6;
+ 
+  }
+
+}
+
+*/
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 50vh;       /* full viewport height */
+  align-items: center;
+}
+
+.inner-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;            /* fill vertical space */
+  width: 100%;
+  max-width: 2666px;
+ 
+}
+
+.navbar {
+  
+  background-color: #333;
+  color: white;  
+  text-align: center;
+  border-radius: 1px;  
+  padding: 20px;
+  border: 2px solid black;
+  flex-shrink: 0;          /* don’t shrink */
+}
+
+
+.footer {
+  background-color: #333;
+  color: white;  
+  text-align: center;
+  border-radius: 1px;  
+  padding: 20px;
+  border: 2px solid black;
+  flex-shrink: 0;          /* don’t shrink */
+}
+
+
+.bar {
+  height: 5px;
+  width: 22px;
+  background-color: #000000;
+  border-radius: 4px; /* 👈 rounds the ends */
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.hamburger {
+  border-radius: 0px;   /* Smaller rounding on button */
+  text-align: left; 
+  outline: none;         
+  border: none;  
+         
+}
+
+/* Hamburger container - acts as positioning reference */
+.hamburger-container {
+  position: relative; /* Essential for absolute positioning of children */
+  display: inline-block; /* Makes container fit content */
+  z-index: 1000; /* Ensures menu stays above other content */
+  zoom: 2.5;
+}
+
+/* Hamburger menu styles */
+.hamburger-menu {
+  position: absolute; /* Takes menu out of document flow */
+  top: 100%; /* Positions directly below the hamburger button */
+  left: 0.5%;
+  width: 200px;
+  background: white;
+  border: 2px solid black;
+  border-radius: 4px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  font-family: 'Calibri', sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 1px;
+  margin: 0; /* Remove any default margins */
+}
+
+/* Remove any top/left positioning you had before */
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 40px;
+  height: 30px;
+  padding: 8px;
+  cursor: pointer;
+ gap: 3px;
+}
+
+
+
+
+
+.hamburger-icon:hover .bar {
+  background-color: blue; /* or your chosen blue color */
+}
+
+/* Hover effect only on the icon span */
+.hamburger-icon:hover {
+  color: #ffcc00;      /* example: change color on hover */
+  transform: scale(1.2); /* example: enlarge icon on hover */
+}
+
+
+.hamburger:focus {
+  color: #ffcc00; 
+  outline: none;
+  box-shadow: none;
+}
+
+
+
+/* Optional: style list items */
+.hamburger-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hamburger-menu li {
+  padding: 15px 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.hamburger-menu li:hover {
+  border-radius: 2px;
+  background-color: #f0f0f0;
+}
+
+@media (max-width: 800px) {
+  
+    .hamburger-menu {
+    width: 160px;  /* smaller menu */
+    font-size: 1rem; /* slightly smaller text */
+    left: 0; /* ensure it doesn’t overflow screen edge */
+  }
+
+  .hamburger-container {
+    zoom: 1.5; /* optional: reduce hamburger icon size slightly */
+  }
+ 
+
+}
+
+
+
+
+
+
+.footer {
+  background-color: #111;
+  color: #fff;
+  padding: 20px;
+  text-align: left;
+  font-size: 14px;
+}
+
+
+.full-screen-page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: white;
+  z-index: 9999;
+  padding: 40px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+  background: #eee;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+

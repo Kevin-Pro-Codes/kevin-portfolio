@@ -1,0 +1,36 @@
+.puzzle-loader {
+  display: grid;
+  grid-template-columns: repeat(3, 60px);
+  grid-template-rows: repeat(3, 60px);
+  gap: 6px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #111;
+}
+
+.piece {
+  width: 60px;
+  height: 60px;
+  background-color: #00c2ff;
+  opacity: 0;
+  transform: scale(0.8);
+  animation: pop-in 0.5s forwards;
+}
+
+.piece-0 { animation-delay: 0.1s; }
+.piece-1 { animation-delay: 0.2s; }
+.piece-2 { animation-delay: 0.3s; }
+.piece-3 { animation-delay: 0.4s; }
+.piece-4 { animation-delay: 0.5s; }
+.piece-5 { animation-delay: 0.6s; }
+.piece-6 { animation-delay: 0.7s; }
+.piece-7 { animation-delay: 0.8s; }
+.piece-8 { animation-delay: 0.9s; }
+
+@keyframes pop-in {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
