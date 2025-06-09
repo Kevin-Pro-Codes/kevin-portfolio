@@ -17,6 +17,11 @@ import './styles/Gallery.css';
 import './styles/Projects.css';
 import './styles/Contact.css';
 
+import kevinImg from './assets/kevin.png';
+import ss1 from './assets/ss1.png';
+import ss2 from './assets/ss2.png';
+import ss3 from './assets/ss3.png';
+
 function App() {
   const [navVisible, setNavVisible] = useState(false);
   const [currentPage, setCurrentPage] = useState('home');
@@ -57,12 +62,11 @@ function App() {
     setNavVisible(false);
   };
 
-  // Gallery images
-  const galleryImages = [
-    { src: "./assets/ss1.png", alt: "Project 1", caption: "" },
-    { src: "./assets/ss2.png", alt: "Project 2", caption: "" },
-    { src: "./assets/ss3.png", alt: "Project 3", caption: "" }
-  ];
+ const galleryImages = [
+  { src: ss1, alt: "Project 1", caption: "" },
+  { src: ss2, alt: "Project 2", caption: "" },
+  { src: ss3, alt: "Project 3", caption: "" }
+];
 
   // Page content components
   const HomePage = () => (
@@ -72,7 +76,7 @@ function App() {
           <div className="image-with-title">
             <h1 className="image-title">Kevin F.</h1>
             <div className="photo-wrapper">
-              <img src="/src/assets/kevin.png" alt="Profile" className="round-image" />
+              <img src={kevinImg} alt="Profile" className="round-image" />
               <motion.div
                 className="orbit-wrapper"
                 animate={{ rotate: 360 }}
