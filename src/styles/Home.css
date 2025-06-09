@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+
 .main-content {
   flex-grow: 1;            /* fill remaining vertical space */
   display: flex;
@@ -21,7 +24,7 @@
   word-break: break-word;
   max-width: 100%;
   font-size: 25rem;
-  font-family: 'Calibri', sans-serif;
+  font-family: 'Open Sans', sans-serif;
  -webkit-text-stroke: 2px black;
   /* Responsive font size */
   font-size: clamp(2rem, 15vw, 15rem); /* min: 1.5rem, preferred: 5% of viewport width, max: 4rem */
