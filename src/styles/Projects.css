@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 /* Add these to your existing App.css */
 .container {
   min-height: 100vh;
@@ -64,6 +66,8 @@
     -1px  1px 0 #000,
      1px  1px 0 #000; /* Black outline */
   -webkit-text-stroke: 1px black; /* Fallback for some browsers */
+
+  font-family: 'Open Sans', sans-serif;
 }
 
 
