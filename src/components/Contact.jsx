@@ -39,7 +39,7 @@ const Contact = () => {
     {
       name: 'WhatsApp',
       icon: <FaWhatsapp size={24} />,
-      link: 'tel:+5511966317832'
+      link: 'https://wa.me/5511966317832'
     },
     /*{
       name: 'Telegram',
