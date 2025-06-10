@@ -32,6 +32,16 @@
   background-color: #e0e0e0;
 }
 
+.home-title {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 25rem;
+  color: black; /* Blue text color */
+  position: relative;
+  padding-bottom: 20px;
+  
+}
+
 /* Project Section */
 .projects-content {
   max-width: 1200px;
@@ -39,25 +49,22 @@
   padding: 0 20px 40px;
 }
 
+
+
 .projects-title,
 .projects-title2 {
   text-align: center;
-  color: blue;
+  color: black;
   position: relative;
   padding-bottom: 20px;
-  font-family: 'Calibri', sans-serif;
+  font-family: 'Nunito', 'Poppins', sans-serif;
   font-weight: 400; /* optional for weight */
 }
 
 .projects-title {
   margin-bottom: 3rem;
   font-size: 5.8rem;
-  text-shadow: 
-    -1px -1px 0 #000,  
-     1px -1px 0 #000,
-    -1px  1px 0 #000,
-     1px  1px 0 #000;
-  -webkit-text-stroke: 1px black;
+ 
 }
 
 .projects-title2 {

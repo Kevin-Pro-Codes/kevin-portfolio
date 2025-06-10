@@ -42,20 +42,7 @@ font-size: 4rem;
  
 }
 
-.home-title {
-  text-align: center;
-  margin-bottom: 3rem;
-  font-size: 25rem;
-  color: blue; /* Blue text color */
-  position: relative;
-  padding-bottom: 20px;
-  text-shadow: 
-    -1px -1px 0 #000,  
-     1px -1px 0 #000,
-    -1px  1px 0 #000,
-     1px  1px 0 #000; /* Black outline */
-  -webkit-text-stroke: 1px black; /* Fallback for some browsers */
-}
+
 
 
 
