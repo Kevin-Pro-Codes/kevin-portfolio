@@ -45,21 +45,6 @@ font-size: 4rem;
 
 
 
-
-/* Adjust the division to better contain the content */
-.division {
-  flex-grow: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  position: relative;
-  background-color: #f0f0f0;
-  border: 2px solid black;
-  padding: 60px 30px; /* Increased padding for better spacing */
-  
-}
-
 .photo-wrapper {
   position: relative;
   width: 350px;

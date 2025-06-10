@@ -72,7 +72,7 @@ function App() {
   const HomePage = () => (
     <>
       <main className="main-content">
-        <section className="division">
+        <section className="divisionx">
           <div className="image-with-title">
             <h1 className="image-title">Kevin</h1>
             <div className="photo-wrapper">
@@ -94,7 +94,7 @@ function App() {
             </div>
           </div>
         </section>
-        <section className="division">
+        <section className="divisionx">
           <Gallery images={galleryImages} />
         </section>
       </main>

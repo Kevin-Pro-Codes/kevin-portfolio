@@ -27,6 +27,16 @@ html, body, #root {
 
 
 
+.divisionx {
+ 
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+  
+  border-bottom: none; /* removes the line at the bottom */
+  
+}
+
 
 
 .image-text-box {
@@ -97,13 +107,12 @@ html, body, #root {
 
 
 .footer {
-  background-color: #333;
-  color: white;  
-  text-align: center;
-  border-radius: 1px;  
+  background-color: black;
+  color: #fff;
   padding: 20px;
-  border: 2px solid black;
-  flex-shrink: 0;          /* don’t shrink */
+  text-align: left;
+  font-size: 14px;  
+  flex-shrink: 0;         
 }
 
 
@@ -223,13 +232,7 @@ html, body, #root {
 
 
 
-.footer {
-  background-color: #111;
-  color: #fff;
-  padding: 20px;
-  text-align: left;
-  font-size: 14px;
-}
+
 
 
 .full-screen-page {
