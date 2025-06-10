@@ -74,7 +74,7 @@ function App() {
       <main className="main-content">
         <section className="division">
           <div className="image-with-title">
-            <h1 className="image-title">Kevin F.</h1>
+            <h1 className="image-title">Kevin</h1>
             <div className="photo-wrapper">
               <img src={kevinImg} alt="Profile" className="round-image" />
               <motion.div
@@ -89,7 +89,8 @@ function App() {
               </motion.div>
             </div>
             <div className="image-text-box">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed sit amet tellus nec nisi dictum efficitur. Fusce at diam vitae metus convallis tincidunt. Aenean vehicula, lorem nec posuere hendrerit, justo velit convallis neque, a fermentum libero metus in ligula.</p>
+              <p className="image-text-box-p">Olá! Meu nome é Kevin Ferreira e sou estudante de programação com pouco mais de dois anos de estudo, atualmente estudante de ADS na UNIASSELVI e busco uma vaga de estágio ou vaga de programador junior. Atualmente estou focando em desenvolvimento Full Stack: Reactjs e Nodejs. </p>
+              
             </div>
           </div>
         </section>
