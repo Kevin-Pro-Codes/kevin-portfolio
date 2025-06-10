@@ -27,6 +27,7 @@ html, body, #root {
 
 
 
+
 .divisionx {
  
   border-top: 2px solid black;
@@ -45,7 +46,7 @@ html, body, #root {
   border-radius: 12px;
   padding: 24px;
   margin-top: 30px;
-  max-width: 1200px; /* Increased from 800px to 1200px */
+  max-width: 1400px; /* Increased from 800px to 1200px */
   width: 100%;
   font-family: 'Nunito', 'Poppins', sans-serif; 
   color: #333;
