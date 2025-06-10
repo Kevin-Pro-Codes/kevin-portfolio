@@ -11,9 +11,15 @@
 }
 
 .contact-content .home-title {
- font-size: 5.8rem;
- font-family: 'Nunito', 'Poppins', sans-serif;
- font-weight: 400; /* optional for weight */
+
+  font-size: 5rem;
+
+   text-align: center;
+  color: black;
+  position: relative;
+  padding-bottom: 10px;
+  font-family: 'Nunito', 'Poppins', sans-serif;
+  
 }
 
 @media (max-width: 768px) {
@@ -21,6 +27,8 @@
   
  .contact-content .home-title  {
     font-size: 4.0rem;
+    font-family: 'Nunito', 'Poppins', sans-serif;
+ 
   }
 }
 
@@ -37,8 +45,6 @@
   font-size: 1rem;
   z-index: 10;
 }
-
-
 
 .contact-content {
   text-align: center;
@@ -65,7 +71,6 @@
   gap: 2rem;
 }
 
-
 .contact-icon {
   display: flex;
   flex-direction: column;
@@ -74,8 +79,6 @@
   color: #333;
   width: 120px;
 }
-
-
 
 .icon-circle {
   width: 80px;
@@ -112,4 +115,3 @@
   90% { opacity: 1; }
   100% { opacity: 0; }
 }
-

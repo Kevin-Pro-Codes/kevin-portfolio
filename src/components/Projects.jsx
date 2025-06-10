@@ -64,7 +64,7 @@ export default function Projects({ onClose }) {
   ];
 
   return (
-    <div className="container">
+    <div className="divisionx">
       <div className="inner-content">
         {/* Main Content Area */}
         <main className="main-content">

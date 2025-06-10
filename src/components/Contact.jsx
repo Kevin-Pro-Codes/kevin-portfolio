@@ -28,8 +28,8 @@ const Contact = () => {
   const contactMethods = [
     {
       name: 'Email',
-      icon: <MdEmail size={24} />,      
-      action: handleEmailCopy,
+      icon: <MdEmail size={24} />,
+      action: handleEmailCopy
     },
     {
       name: 'LinkedIn',
@@ -39,7 +39,7 @@ const Contact = () => {
     {
       name: 'WhatsApp',
       icon: <FaWhatsapp size={24} />,
-      link: 'https://wa.me/5511966317832'
+      link: 'tel:+5511966317832'
     },
     /*{
       name: 'Telegram',

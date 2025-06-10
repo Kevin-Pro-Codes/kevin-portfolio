@@ -56,15 +56,15 @@
   text-align: center;
   color: black;
   position: relative;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   font-family: 'Nunito', 'Poppins', sans-serif;
-  font-weight: 400; /* optional for weight */
+
 }
 
 .projects-title {
   margin-bottom: 3rem;
   font-size: 5.8rem;
- 
+  font-family: 'Nunito', 'Poppins', sans-serif;
 }
 
 .projects-title2 {
