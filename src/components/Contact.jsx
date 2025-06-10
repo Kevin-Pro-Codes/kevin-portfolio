@@ -28,8 +28,8 @@ const Contact = () => {
   const contactMethods = [
     {
       name: 'Email',
-      icon: <MdEmail size={24} />,
-      action: handleEmailCopy
+      icon: <MdEmail size={24} />,      
+      action: handleEmailCopy,
     },
     {
       name: 'LinkedIn',
