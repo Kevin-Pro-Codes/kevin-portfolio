@@ -30,11 +30,9 @@ const Gallery = ({ images }) => {
       </div>
 
   <div className="gallery-wrapper">
-    {!isZoomed && (
-      <button className="arrow-button left" onClick={prevImage}>
-        &lt;
-      </button>
-    )}
+   {!isZoomed && (
+  <button className="arrow-button left" onClick={prevImage} aria-label="Previous image" />
+)}
 
     <div 
       className="gallery-image-container"
@@ -55,10 +53,8 @@ const Gallery = ({ images }) => {
     </div>
 
     {!isZoomed && (
-      <button className="arrow-button right" onClick={nextImage}>
-        &gt;
-      </button>
-    )}
+  <button className="arrow-button right" onClick={nextImage} aria-label="Next image" />
+)}
   </div>
 
   <AnimatePresence>

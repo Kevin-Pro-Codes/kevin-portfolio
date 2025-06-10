@@ -28,11 +28,6 @@ html, body, #root {
 
 
 
-.image-title {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 3rem;  /* or any size you want */
-  font-weight: 400; /* optional for weight */
-}
 
 .image-text-box {
   background: rgba(255, 255, 255, 0.8); /* Leve transparência */
@@ -43,8 +38,7 @@ html, body, #root {
   max-width: 1200px; /* Increased from 800px to 1200px */
   width: 100%;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-  font-weight: bold;
-  font-family: 'Poppins', sans-serif;
+  font-weight: bold;  
   color: #333;
   font-size: 1.3rem; /* slightly larger text */
   line-height: 1.7;
