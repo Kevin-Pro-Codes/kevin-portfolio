@@ -1,4 +1,4 @@
-/* Gallery Styles */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
 
 .gallery-container {
   width: 100%;
@@ -49,6 +49,7 @@ border-radius: 8px;
   height: 40px;
   border-radius: 50%;
   font-size: 60px;
+  font-family: 'Open Sans', sans-serif;
   cursor: pointer;
   z-index: 10;
   display: flex;
