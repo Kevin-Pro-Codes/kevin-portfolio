@@ -11,7 +11,7 @@ export default function Projects({ onClose }) {
       title: "Greeno Social",
       videoId: "0_DmabOD54k",
       date: "Maio de 2025",
-      category: "Desenvolvimento Web",
+      category: "Web Design",
       description: "Um projeto que usa Reactjs, Bootstrap, HTML5, CSS3 como sua base.",
       tech: ["HTML5", "CSS3/Bootstrap", "React.js"]
     },
@@ -64,7 +64,7 @@ export default function Projects({ onClose }) {
   ];
 
   return (
-    <div className="divisionx">
+ 
       <div className="inner-content">
         {/* Main Content Area */}
         <main className="main-content">
@@ -114,6 +114,6 @@ export default function Projects({ onClose }) {
 
         <Footer />
       </div>
-    </div>
+   
   );
 }

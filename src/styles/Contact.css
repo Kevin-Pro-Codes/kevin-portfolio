@@ -46,6 +46,9 @@
   z-index: 10;
 }
 
+
+
+
 .contact-content {
   max-width: 1800px;
   margin-top: 0; /* Remove top margin */
@@ -53,12 +56,11 @@
 
 .contact-content h1 {
   font-size: 2.5rem;
-  margin-bottom: 1rem;
+
 }
 
 .contact-content p {
   font-size: 1.2rem;
-  margin-bottom: 3rem;
   color: #555;
 }
 
@@ -115,3 +117,14 @@
 }
 
 
+/* Add this temporarily to your CSS 
+
+.contact-content { outline: 2px solid orange; padding: 0; margin: 0; }
+
+*/
+
+.contact-content {
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 30px 20px; /* Added padding */
+}
