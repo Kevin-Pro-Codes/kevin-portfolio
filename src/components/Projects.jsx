@@ -11,8 +11,8 @@ export default function Projects({ onClose }) {
       title: "Greeno Social",
       videoId: "0_DmabOD54k",
       date: "Maio de 2025",
-      category: "Web Development",
-      description: "A project that uses React, Bootstrap, HTML5, CSS3 as it's base",
+      category: "Desenvolvimento Web",
+      description: "Um projeto que usa Reactjs, Bootstrap, HTML5, CSS3 como sua base.",
       tech: ["HTML5", "CSS3/Bootstrap", "React.js"]
     },
     /*
