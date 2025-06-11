@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
+
 .contact-page {
   display: flex;
   flex-direction: column;
@@ -7,17 +8,11 @@
   min-height: 100vh;
   padding: 2rem;
   background-color: #f8f9fa;
-  position: relative;
+
 }
 
 .contact-content .home-title {
-
   font-size: 5rem;
-
-   text-align: center;
-  color: black;
-  position: relative;
-  padding-bottom: 10px;
   font-family: 'Nunito', 'Poppins', sans-serif;
   
 }
@@ -30,6 +25,11 @@
     font-family: 'Nunito', 'Poppins', sans-serif;
  
   }
+}
+
+.home-title {
+  margin-top: 0; /* Remove top margin */
+  margin-bottom: 1rem; /* Adjust bottom spacing */
 }
 
 .back-button {
@@ -47,10 +47,8 @@
 }
 
 .contact-content {
-  text-align: center;
-  max-width: 800px;
-  margin-top: 4rem;
-  
+  max-width: 1800px;
+  margin-top: 0; /* Remove top margin */
 }
 
 .contact-content h1 {
@@ -115,3 +113,5 @@
   90% { opacity: 1; }
   100% { opacity: 0; }
 }
+
+

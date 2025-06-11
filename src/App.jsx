@@ -1,7 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-
 import InitialAnim from './components/InitialAnim';
 import Anim from './components/Anim';
 
@@ -62,21 +61,26 @@ function App() {
     setNavVisible(false);
   };
 
- const galleryImages = [
-  { src: ss1, alt: "Project 1", caption: "" },
-  { src: ss2, alt: "Project 2", caption: "" },
-  { src: ss3, alt: "Project 3", caption: "" }
-];
+  const galleryImages = [
+    { src: ss1, alt: "Project 1", caption: "" },
+    { src: ss2, alt: "Project 2", caption: "" },
+    { src: ss3, alt: "Project 3", caption: "" }
+  ];
 
-  // Page content components
+  // Home page component
   const HomePage = () => (
     <>
       <main className="main-content">
         <section className="divisionx">
           <div className="image-with-title">
+            {/* TITLE ABOVE IMAGE */}
             <h1 className="image-title">Kevin</h1>
+
+            {/* IMAGE */}
             <div className="photo-wrapper">
               <img src={kevinImg} alt="Profile" className="round-image" />
+
+              {/* Orbit Balls */}
               <motion.div
                 className="orbit-wrapper"
                 animate={{ rotate: 360 }}
@@ -88,16 +92,22 @@ function App() {
                 <div className="orbit-ball left"></div>
               </motion.div>
             </div>
+
+            {/* DESCRIPTION BELOW IMAGE */}
             <div className="image-text-box">
-              <p className="image-text-box-p">Olá! Meu nome é Kevin Ferreira e sou estudante de programação com pouco mais de dois anos de estudo, atualmente estudante de ADS na UNIASSELVI e busco uma vaga de estágio ou vaga de programador junior. Atualmente estou focando em desenvolvimento Full Stack: Reactjs e Nodejs. </p>
-              
+              <p className="image-text-box-p">
+                Olá! Meu nome é Kevin Ferreira e sou estudante de programação com pouco mais de dois anos de estudo, atualmente estudante de ADS na UNIASSELVI e busco uma vaga de estágio ou vaga de programador junior. Atualmente estou focando em desenvolvimento Full Stack: Reactjs e Nodejs.
+              </p>
             </div>
           </div>
         </section>
+
+        {/* GALLERY SECTION */}
         <section className="divisionx">
           <Gallery images={galleryImages} />
         </section>
       </main>
+
       <Footer />
     </>
   );
@@ -123,8 +133,10 @@ function App() {
 
   return (
     <div className="container">
+      {/* Initial Animation */}
       <InitialAnim onComplete={() => setInitialAnimComplete(true)} />
-      
+
+      {/* Main Content */}
       {initialAnimComplete && (
         <div className="inner-content">
           {/* Hamburger Menu */}
@@ -143,6 +155,7 @@ function App() {
               <div className="bar"></div>
             </div>
 
+            {/* Animated Menu */}
             <AnimatePresence>
               {navVisible && (
                 <motion.div
@@ -154,7 +167,7 @@ function App() {
                   transition={{ duration: 0.2 }}
                 >
                   <ul>
-                    <li onClick={() => navigateTo('home')}>Inicio</li>
+                    <li onClick={() => navigateTo('home')}>Início</li>
                     <li onClick={() => navigateTo('projects')}>Projetos</li>
                     <li onClick={() => navigateTo('contact')}>Contato</li>
                   </ul>
@@ -163,7 +176,7 @@ function App() {
             </AnimatePresence>
           </div>
 
-          {/* Render the animated page */}
+          {/* Page Content */}
           {renderPage()}
         </div>
       )}

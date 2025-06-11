@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
+
+
 /* Layout Containers */
 .container {
   min-height: 100vh;
@@ -18,7 +20,6 @@
 /* Main Sections */
 .main-content .division {
   position: relative;
-  padding-bottom: 2rem;
   flex: 1;
 }
 
@@ -46,13 +47,13 @@
 .projects-content {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px 40px;
+
 }
 
 
 
-.projects-title,
-.projects-title2 {
+.projects-title
+ {
   text-align: center;
   color: black;
   position: relative;
@@ -67,10 +68,7 @@
   font-family: 'Nunito', 'Poppins', sans-serif;
 }
 
-.projects-title2 {
-  font-size: 2.8rem;
-  margin-bottom: 3rem;
-}
+
 
 /* Project Content */
 .project-details {
@@ -111,6 +109,8 @@
   font-size: 0.9rem;
   color: #34495e;
 }
+
+
 
 .project-divider {
   height: 1px;
@@ -180,9 +180,6 @@
     font-size: 4rem;
   }
 
-  .projects-title2 {
-    font-size: 1.8rem;
-  }
 
   .project-details {
     padding: 1rem;
@@ -210,19 +207,13 @@
 }
 
 @media (max-width: 480px) {
-  .projects-title {
+
+   .projects-title {
+    margin-bottom: 0.5rem; /* Adjust as needed */
     font-size: 3.8rem;
-    margin-bottom: 1.5rem;
-    padding-bottom: 10px;
-    -webkit-text-stroke: 0.5px black;
-    width: 100%;
+    
   }
 
-  .projects-title2 {
-    font-size: 2.3rem;
-    margin-bottom: 1rem;
-    padding-bottom: 5px;
-  }
 
   .projects-content {
     padding: 1rem 0.5rem;
@@ -277,10 +268,6 @@
     font-size: 2.5rem;
   }
 
-  .projects-title2 {
-    font-size: 1.1rem;
-  }
-
   .project-details h3 {
     font-size: 1rem;
   }
@@ -298,3 +285,5 @@
     min-height: 160px;
   }
 }
+
+
