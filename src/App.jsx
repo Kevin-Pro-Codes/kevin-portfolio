@@ -16,7 +16,7 @@ import './styles/Gallery.css';
 import './styles/Projects.css';
 import './styles/Contact.css';
 
-import kevinImg from './assets/kevin2.jpg';
+import kevinImg from './assets/kevin3.jpg';
 import ss1 from './assets/ss1.png';
 import ss2 from './assets/ss2.png';
 import ss3 from './assets/ss3.png';
