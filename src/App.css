@@ -443,3 +443,13 @@ font-size: 7rem;
     transform: rotate(360deg);
   }
 }
+
+@media (max-width: 240px) {
+  body {
+    transform: scale(0.5);
+    transform-origin: top left;
+    width: 200vw; /* doubles the content width to fill screen */
+    height: 200vh; /* doubles the height to match scaling */
+    overflow: hidden;
+  }
+}
