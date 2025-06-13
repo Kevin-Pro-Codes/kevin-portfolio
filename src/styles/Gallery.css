@@ -12,7 +12,10 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 per line */
   gap: 12px;
+  width: 70%;
   margin-bottom: 1.5rem;
+  margin-left: auto;
+margin-right: auto;
 }
 
 .sample-button {
