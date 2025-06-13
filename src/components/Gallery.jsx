@@ -20,6 +20,8 @@ const Gallery = ({ images }) => {
     if (e.key === 'Escape') setIsFullscreen(false);
   };
 
+  const buttonLabels = ['C', 'C++', 'Java', 'Kotlin', 'Reactjs', 'Nodejs'];
+
   return (
     <div
       className="gallery-container"
@@ -27,19 +29,17 @@ const Gallery = ({ images }) => {
       onKeyDown={handleKeyDown}
       ref={containerRef}
     >
-      <div className="thumbnail-row">
-        {images.map((img, i) => (
-          <img
-            key={i}
-            src={img.src}
-            alt={img.alt}
-            className={`thumbnail ${i === currentIndex ? 'active' : ''}`}
-            onClick={() => setCurrentIndex(i)}
-          />
+      {/* Top Buttons */}
+      <div className="gallery-button-group">
+        {buttonLabels.map((label, index) => (
+          <button key={index} className="sample-button">{label}</button>
         ))}
       </div>
 
+      {/* Image and Arrows */}
       <div className="main-image-box">
+        <button className="nav-button left" onClick={prevImage}></button>
+
         <motion.img
           key={currentIndex}
           src={images[currentIndex].src}
@@ -50,14 +50,22 @@ const Gallery = ({ images }) => {
           transition={{ duration: 0.4 }}
           onClick={() => setIsFullscreen(true)}
         />
-        <button className="nav-button left" onClick={prevImage}>
-          ‹
-        </button>
-        <button className="nav-button right" onClick={nextImage}>
-          ›
-        </button>
+
+        <button className="nav-button right" onClick={nextImage}></button>
       </div>
 
+      {/* Dots */}
+      <div className="gallery-dots">
+        {images.map((_, index) => (
+          <button
+            key={index}
+            className={`dot ${index === currentIndex ? 'active' : ''}`}
+            onClick={() => setCurrentIndex(index)}
+          />
+        ))}
+      </div>
+
+      {/* Fullscreen zoom view */}
       <AnimatePresence>
         {isFullscreen && (
           <motion.div
