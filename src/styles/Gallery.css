@@ -96,7 +96,7 @@ margin-right: auto;
 
 .dot {
   width: 6px;
-  height: 35px;
+  height: 40px;
   border-radius: 100%; /* perfect circle */
   background: #ccc;
   border: 2px solid transparent;
