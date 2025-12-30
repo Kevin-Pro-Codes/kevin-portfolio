@@ -18,7 +18,7 @@ const Projects = () => {
       description: "Social networking platform with real-time messaging, content sharing, communities, and user profiles.",
       image: grenoImage, 
       liveLink: "https://greno-social.vercel.app/",
-      githubLink: "#",
+      githubLink: "https://github.com/Kevin-Pro-Codes/greno-social",
       tags: ["HTML", "CSS", "React",  "Bootstrap", "SQLite"]
     },
     {
@@ -26,7 +26,7 @@ const Projects = () => {
       description: "Comprehensive online learning platform with courses, progress tracking, certificates, and interactive content.",
       image: coursinImage, 
       liveLink: "https://coursin.vercel.app/",
-      githubLink: "#",
+      githubLink: "https://github.com/Kevin-Pro-Codes/coursin",
       tags: ["HTML", "CSS", "React",  "Tailwind", "PostgreSQL"]
     },
     {
@@ -34,7 +34,7 @@ const Projects = () => {
       description: "Advanced cryptocurrency trading platform with real-time charts, portfolio tracking, and secure transactions.",
       image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       liveLink: "https://halo-trading.vercel.app/",
-      githubLink: "#",
+      githubLink: "https://github.com/Kevin-Pro-Codes/halo-trading",
       tags: ["HTML", "CSS", "React", "Tailwind"]
     },
     {
@@ -42,7 +42,7 @@ const Projects = () => {
       description: "Modern fashion e-commerce platform with 3D product previews, virtual try-on, and personalized recommendations.",
       image: modelImage, 
       liveLink: "https://modelle-one.vercel.app/",
-      githubLink: "#",
+      githubLink: "https://github.com/Kevin-Pro-Codes/modelle",
       tags: ["HTML", "CSS", "React", "Tailwind"]
     },
     {
@@ -50,7 +50,7 @@ const Projects = () => {
       description: "Interactive travel guide for Newfoundland with attractions, maps, booking system, and local experiences.",
       image: canImage,     
       liveLink: "https://newfoundland-island.vercel.app/",
-      githubLink: "#",
+      githubLink: "https://github.com/Kevin-Pro-Codes/newfoundland-island",
       tags: ["HTML", "CSS", "React", "Tailwind"]
     },
     {
@@ -58,7 +58,7 @@ const Projects = () => {
       description: "Modern color palette generator with real-time preview, color code extraction, and export options for designers and developers.",
       image: "https://images.unsplash.com/photo-1579546929662-711aa81148cf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       liveLink: "https://color-palette-code.vercel.app/",
-      githubLink: "#",
+      githubLink: "https://github.com/Kevin-Pro-Codes/color-code",
       tags: ["HTML", "CSS", "React", "Tailwind"]
     }
   ];
