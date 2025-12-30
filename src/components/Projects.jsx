@@ -35,7 +35,7 @@ const Projects = () => {
       image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       liveLink: "https://halo-trading.vercel.app/",
       githubLink: "#",
-      tags: ["React", "Tailwind"]
+      tags: ["HTML", "CSS", "React", "Tailwind"]
     },
     {
       title: "Modelle Fashion Platform",
@@ -43,7 +43,7 @@ const Projects = () => {
       image: modelImage, 
       liveLink: "https://modelle-one.vercel.app/",
       githubLink: "#",
-      tags: ["React", "Tailwind"]
+      tags: ["HTML", "CSS", "React", "Tailwind"]
     },
     {
       title: "Newfoundland Travel Guide",      
@@ -51,7 +51,7 @@ const Projects = () => {
       image: canImage,     
       liveLink: "https://newfoundland-island.vercel.app/",
       githubLink: "#",
-      tags: ["React", "Tailwind"]
+      tags: ["HTML", "CSS", "React", "Tailwind"]
     },
     {
       title: "Color Palette Generator",
@@ -59,7 +59,7 @@ const Projects = () => {
       image: "https://images.unsplash.com/photo-1579546929662-711aa81148cf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       liveLink: "https://color-palette-code.vercel.app/",
       githubLink: "#",
-      tags: ["React", "Tailwind"]
+      tags: ["HTML", "CSS", "React", "Tailwind"]
     }
   ];
 
