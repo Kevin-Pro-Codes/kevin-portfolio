@@ -19,7 +19,7 @@ const Projects = () => {
       image: grenoImage, 
       liveLink: "https://greno-social.vercel.app/",
       githubLink: "#",
-      tags: ["Social", "Real-time", "Community", "Messaging", "React"]
+      tags: ["HTML", "CSS", "React",  "Bootstrap", "SQLite"]
     },
     {
       title: "Coursin Learning Platform",
