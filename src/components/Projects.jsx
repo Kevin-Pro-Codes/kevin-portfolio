@@ -27,7 +27,7 @@ const Projects = () => {
       image: coursinImage, 
       liveLink: "https://coursin.vercel.app/",
       githubLink: "#",
-      tags: ["Education", "E-learning", "Courses", "React", "Progress"]
+      tags: ["HTML", "CSS", "React",  "Tailwind", "PostgreSQL"]
     },
     {
       title: "Halo Trading Platform",
@@ -35,7 +35,7 @@ const Projects = () => {
       image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       liveLink: "https://halo-trading.vercel.app/",
       githubLink: "#",
-      tags: ["Crypto", "Trading", "Finance", "Real-time", "Charts"]
+      tags: ["React", "Tailwind"]
     },
     {
       title: "Modelle Fashion Platform",
@@ -43,7 +43,7 @@ const Projects = () => {
       image: modelImage, 
       liveLink: "https://modelle-one.vercel.app/",
       githubLink: "#",
-      tags: ["Fashion", "E-commerce", "3D", "React", "Modern UI"]
+      tags: ["React", "Tailwind"]
     },
     {
       title: "Newfoundland Travel Guide",      
@@ -51,7 +51,7 @@ const Projects = () => {
       image: canImage,     
       liveLink: "https://newfoundland-island.vercel.app/",
       githubLink: "#",
-      tags: ["Travel", "Maps", "Booking", "React", "Responsive"]
+      tags: ["React", "Tailwind"]
     },
     {
       title: "Color Palette Generator",
@@ -59,7 +59,7 @@ const Projects = () => {
       image: "https://images.unsplash.com/photo-1579546929662-711aa81148cf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       liveLink: "https://color-palette-code.vercel.app/",
       githubLink: "#",
-      tags: ["React", "Color Theory", "UI/UX", "Design Tools", "Export"]
+      tags: ["React", "Tailwind"]
     }
   ];
 
@@ -160,7 +160,7 @@ const Projects = () => {
           {project.tags.map((tag) => (
             <span 
               key={tag}
-              className="px-2 py-1 bg-gray-100 text-gray-800 text-xs font-medium rounded-full border border-gray-300"
+              className="px-2 py-1 bg-gray-100 text-gray-800 text-xs font-medium rounded-sm border border-gray-300"
             >
               {tag}
             </span>
@@ -193,8 +193,7 @@ const Projects = () => {
             <ProjectCard key={`${project.title}-${index}`} project={project} index={index} />
           ))}
         </div>
-
-        {/* Botão sempre visível */}
+      
         {hasProjectsToShow && (
           <motion.div
             initial={{ opacity: 0 }}
