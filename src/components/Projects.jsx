@@ -10,58 +10,57 @@ import modelImage from '../assets/model.jpg';
 
 const Projects = () => {
   const [showAll, setShowAll] = useState(false);
-  
-  // Todos os projetos
-  const allProjects = [
-    {
-      title: "Greno Social Network",
-      description: "Social networking platform with real-time messaging, content sharing, communities, and user profiles.",
-      image: grenoImage, 
-      liveLink: "https://greno-social.vercel.app/",
-      githubLink: "https://github.com/Kevin-Pro-Codes/greno-social",
-      tags: ["HTML", "CSS", "React",  "Bootstrap", "SQLite"]
-    },
-    {
-      title: "Coursin Learning Platform",
-      description: "Comprehensive online learning platform with courses, progress tracking, certificates, and interactive content.",
-      image: coursinImage, 
-      liveLink: "https://coursin.vercel.app/",
-      githubLink: "https://github.com/Kevin-Pro-Codes/coursin",
-      tags: ["HTML", "CSS", "React",  "Tailwind", "PostgreSQL"]
-    },
-    {
-      title: "Halo Trading Platform",
-      description: "Advanced cryptocurrency trading platform with real-time charts, portfolio tracking, and secure transactions.",
-      image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      liveLink: "https://halo-trading.vercel.app/",
-      githubLink: "https://github.com/Kevin-Pro-Codes/halo-trading",
-      tags: ["HTML", "CSS", "React", "Tailwind"]
-    },
-    {
-      title: "Modelle Fashion Platform",
-      description: "Modern fashion e-commerce platform with 3D product previews, virtual try-on, and personalized recommendations.",
-      image: modelImage, 
-      liveLink: "https://modelle-one.vercel.app/",
-      githubLink: "https://github.com/Kevin-Pro-Codes/modelle",
-      tags: ["HTML", "CSS", "React", "Tailwind"]
-    },
-    {
-      title: "Newfoundland Travel Guide",      
-      description: "Interactive travel guide for Newfoundland with attractions, maps, booking system, and local experiences.",
-      image: canImage,     
-      liveLink: "https://newfoundland-island.vercel.app/",
-      githubLink: "https://github.com/Kevin-Pro-Codes/newfoundland-island",
-      tags: ["HTML", "CSS", "React", "Tailwind"]
-    },
-    {
-      title: "Color Palette Generator",
-      description: "Modern color palette generator with real-time preview, color code extraction, and export options for designers and developers.",
-      image: "https://images.unsplash.com/photo-1579546929662-711aa81148cf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      liveLink: "https://color-palette-code.vercel.app/",
-      githubLink: "https://github.com/Kevin-Pro-Codes/color-code",
-      tags: ["HTML", "CSS", "React", "Tailwind"]
-    }
-  ];
+   
+ const allProjects = [
+  {
+    title: "Greno Rede Social",
+    description: "Plataforma de rede social com feed de mensagens e perfis de usuário.",
+    image: grenoImage, 
+    liveLink: "https://greno-social.vercel.app/",
+    githubLink: "https://github.com/Kevin-Pro-Codes/greno-social",
+    tags: ["HTML", "CSS", "React", "Node.js", "Bootstrap", "SQLite"]
+  },
+  {
+    title: "Coursin Plataforma de Cursos",
+    description: "Plataforma abrangente de aprendizado online com cursos, acompanhamento de progresso, certificados e conteúdo interativo.",
+    image: coursinImage, 
+    liveLink: "https://coursin.vercel.app/",
+    githubLink: "https://github.com/Kevin-Pro-Codes/coursin",
+    tags: ["HTML", "CSS", "React", "Node.js", "Tailwind", "PostgreSQL"]
+  },
+  {
+    title: "Halo Plataforma de Trading",
+    description: "Plataforma avançada de trading de criptomoedas com gráficos em tempo real, rastreamento de portfólio e transações seguras.",
+    image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    liveLink: "https://halo-trading.vercel.app/",
+    githubLink: "https://github.com/Kevin-Pro-Codes/halo-trading",
+    tags: ["HTML", "CSS", "React", "Tailwind"]
+  },
+  {
+    title: "Modelle Plataforma de Moda",
+    description: "Plataforma moderna de moda com visualizações 3D de produtos, experimentação virtual e recomendações personalizadas.",
+    image: modelImage, 
+    liveLink: "https://modelle-one.vercel.app/",
+    githubLink: "https://github.com/Kevin-Pro-Codes/modelle",
+    tags: ["HTML", "CSS", "React", "Tailwind"]
+  },
+  {
+    title: "Newfoundland Turismo de Ilha Canadense",      
+    description: "Guia de viagem interativo para Newfoundland com atrações, mapas, sistema de reservas e experiências locais.",
+    image: canImage,     
+    liveLink: "https://newfoundland-island.vercel.app/",
+    githubLink: "https://github.com/Kevin-Pro-Codes/newfoundland-island",
+    tags: ["HTML", "CSS", "React", "Tailwind"]
+  },
+  {
+    title: "Colorify: Paleta de Cores",
+    description: "Gerador moderno de paletas de cores com pré-visualização em tempo real, extração de códigos de cor e opções de exportação para designers e desenvolvedores.",
+    image: "https://images.unsplash.com/photo-1579546929662-711aa81148cf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    liveLink: "https://color-palette-code.vercel.app/",
+    githubLink: "https://github.com/Kevin-Pro-Codes/color-code",
+    tags: ["HTML", "CSS", "React", "Tailwind"]
+  }
+];
 
   // Número de projetos a serem exibidos por padrão
   const INITIAL_DISPLAY_COUNT = 6;
