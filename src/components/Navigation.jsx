@@ -4,6 +4,7 @@ import logoName from '../assets/name.png';
 import { 
   FaGithub, 
   FaLinkedin, 
+  FaWhatsapp, // Adicionado aqui
   FaBars,
   FaTimes
 } from 'react-icons/fa';
@@ -13,6 +14,9 @@ const Navigation = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [alertVisible, setAlertVisible] = useState(true);
+
+  // Substitua pelo seu número (DDI + DDD + Número) sem espaços ou símbolos
+  const whatsappNumber = "5511966317832"; 
 
   useEffect(() => {
     const handleScroll = () => {
@@ -79,9 +83,14 @@ const Navigation = () => {
                className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-800 hover:bg-gray-200 hover:text-black transition-all duration-300">
               <FaGithub size={20} />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+            <a href="https://www.linkedin.com/in/kevin-ferreira-programmer/" target="_blank" rel="noopener noreferrer"
                className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-800 hover:bg-gray-200 hover:text-black transition-all duration-300">
               <FaLinkedin size={20} />
+            </a>
+            {/* Botão WhatsApp Desktop */}
+            <a href={`https://wa.me/${whatsappNumber}`} target="_blank" rel="noopener noreferrer"
+               className="w-10 h-10 rounded-full bg-green-50 flex items-center justify-center text-green-600 hover:bg-green-100 transition-all duration-300">
+              <FaWhatsapp size={22} />
             </a>
             <button 
               onClick={() => scrollToSection('contact')}
@@ -123,6 +132,11 @@ const Navigation = () => {
                 <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
                    className="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center text-gray-800 hover:bg-gray-200 hover:text-black">
                   <FaLinkedin size={20} />
+                </a>
+                {/* Botão WhatsApp Mobile */}
+                <a href={`https://wa.me/${whatsappNumber}`} target="_blank" rel="noopener noreferrer"
+                   className="w-12 h-12 rounded-full bg-green-50 flex items-center justify-center text-green-600 hover:bg-green-100">
+                  <FaWhatsapp size={24} />
                 </a>
               </div>
             </div>
