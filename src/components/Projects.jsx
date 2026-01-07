@@ -26,7 +26,7 @@ const Projects = () => {
     image: coursinImage, 
     liveLink: "https://coursin.vercel.app/",
     githubLink: "https://github.com/Kevin-Pro-Codes/coursin",
-    tags: ["HTML", "CSS", "React", "Node.js", "Tailwind", "PostgreSQL"]
+    tags: ["HTML", "CSS", "React", "Node.js", "Tailwind", "MySQL"]
   },
   {
     title: "Halo Plataforma de Trading",
