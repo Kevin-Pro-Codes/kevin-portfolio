@@ -1,0 +1,185 @@
+{
+  "hero": {
+    "welcome": "Hello, welcome!",
+    "role_top": "Full Stack",
+    "role_bottom": "Developer",
+    "description": "Full Stack Developer in React, Angular, Bootstrap, Tailwind, PHP, Node.js, and TypeScript. Creating end-to-end applications from frontend to backend with a focus on performance and scalability.",
+    "years_exp": "Years Exp",
+    "image_alt": "Kevin - Full Stack Developer"
+  },
+  "about": {
+    "title_main": "About ",
+    "title_sub": "Me",
+    "intro": "Full Stack Developer specializing in creating end-to-end solutions, combining modern frontend, robust backend, and efficient data modeling",
+    "history_title": "My Story",
+    "history_title": "My Story",
+    "history_item1": "I started programming out of curiosity and turned passion into a profession",
+    "history_item2": "Self-taught with over 3 years of experience building solutions from scratch",
+    "history_item3": "Passionate about solving complex problems with clean code",
+    "quote": "\"Every line of code is an opportunity to create something impactful\"",
+    "approach_title": "My Approach",
+    "approach_desc": "I believe software development goes beyond writing code - it's about understanding needs, creating experiences, and delivering real value to end-users.",
+    "focus_title": "User Focused",
+    "focus_desc": "I always develop with the final user experience in mind",
+    "quality_title": "Quality & Performance",
+    "quality_desc": "Optimized code built with scalability and maintenance in mind",
+    "comm_title": "Clear Communication",
+    "comm_desc": "I explain technical processes in an accessible way for everyone",
+    "extra_title": "Beyond the code:",
+    "extra_desc": "I'm constantly learning about new technologies, following developer communities, and I believe the best software is built with collaboration and an open mind."
+  },
+
+  "closed_source": {
+    "title_part1": "Closed ",
+    "title_part2": "Source Projects",
+    "main_description": "I have experience in several projects with proprietary source code that I cannot make publicly available. I can demonstrate these solutions via video call or personalized presentation.",
+    "cards": {
+      "demo": {
+        "title": "Live Demo",
+        "desc": "Schedule a video call to see the project in operation, user flows, and core functionalities.",
+        "item1": "Interactive demonstration",
+        "item2": "Real-time Q&A",
+        "item3": "Screen sharing"
+      },
+      "use_cases": {
+        "title": "Use Cases",
+        "desc": "Projects in production with real cases: internal systems, administrative dashboards, and complex automations.",
+        "tag1": "Private APIs",
+        "tag2": "Dashboards",
+        "tag3": "Automation",
+        "tag4": "Internal Systems"
+      },
+      "architecture": {
+        "title": "Architecture & Code",
+        "desc": "Technical discussion about architecture, code patterns, technical decisions, and implemented solutions.",
+        "item1": "Conceptual code review",
+        "item2": "Architectural decisions",
+        "item3": "Implemented patterns"
+      }
+    },
+    "trigger_btn": "Request Video Demo",
+    "trigger_hint": "I will get in touch to schedule the best time",
+    "form": {
+      "title": "Schedule Demo",
+      "label_name": "Name",
+      "placeholder_name": "Your name",
+      "label_email": "Email",
+      "placeholder_email": "your@email.com",
+      "label_interest": "Specific Interest",
+      "interest_default": "Select project type",
+      "interest_opt1": "Backend Systems/APIs",
+      "interest_opt2": "Complex Frontend Applications",
+      "interest_opt3": "Projects",
+      "interest_opt4": "Automation/DevOps",
+      "interest_opt5": "Dashboards & Analytics",
+      "label_date": "Preferred Date",
+      "label_time": "Preferred Time",
+      "time_default": "Which time do you prefer?",
+      "time_morning": "Morning (9am-12pm)",
+      "time_afternoon": "Afternoon (2pm-6pm)",
+      "time_evening": "Evening (7pm-9pm)",
+      "submit": "Request Demo",
+      "cancel": "Cancel",
+      "alert_success": "Demo request sent! I will contact you shortly to schedule."
+    },
+    "footer_lock": "Due to confidentiality reasons, the source code cannot be shared publicly. The demonstration allows for evaluating my technical skills without exposing intellectual property."
+  },
+  "skills": {
+    "title_main": "My ",
+    "title_sub": "Skills",
+    "subtitle": "Expertise in full-stack development with a focus on versioning and best practices",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "database": "Database",
+      "versioning": "Versioning"
+    },
+    "methodologies": {
+      "title": "Development Methodologies",
+      "subtitle": "Approaches and practices for efficient and scalable software development",
+      "card1_title": "Practical React",
+      "card1_desc": "Functional applications with forms, navigation, and API consumption",
+      "card2_title": "Backend Architecture",
+      "card2_desc": "RESTful APIs, JWT authentication, and scalable design patterns",
+      "card3_title": "Data Modeling",
+      "card3_desc": "Relational and non-relational databases, optimized queries"
+    }
+  },
+  "projects": {
+    "title_main": "Developed ",
+    "title_sub": "Projects",
+    "subtitle": "Modern applications developed with current technologies, focused on performance, usability, and responsive design",
+    "btn_show_more": "Show {{count}} more project",
+    "btn_show_more_plural": "Show {{count}} more projects",
+    "btn_show_less": "Show less ({{count}} projects)",
+    "btn_all_shown": "All {{count}} projects displayed",
+    "btn_visible": "All {{count}} projects are visible",
+    "items": {
+      "greno": {
+        "title": "Greno Social Network",
+        "description": "Social media platform with message feed and user profiles."
+      },
+      "coursin": {
+        "title": "Coursin Course Platform",
+        "description": "Comprehensive online learning platform with courses, progress tracking, certificates, and interactive content."
+      },
+      "halo": {
+        "title": "Halo Trading Platform",
+        "description": "Advanced cryptocurrency trading platform with real-time charts, portfolio tracking, and secure transactions."
+      },
+      "modelle": {
+        "title": "Modelle Fashion Platform",
+        "description": "Modern fashion platform with 3D product views, virtual try-ons, and personalized recommendations."
+      },
+      "newfoundland": {
+        "title": "Newfoundland Island Tourism",
+        "description": "Interactive travel guide for Newfoundland with attractions, maps, booking system, and local experiences."
+      },
+      "colorify": {
+        "title": "Colorify: Color Palette",
+        "description": "Modern color palette generator with real-time preview, color code extraction, and export options for designers and developers."
+      }
+    }
+  },
+  "buttons": {
+    "contact": "Contact me",
+    "github": "GitHub",
+    "live_demo": "Live Demo",
+    "code": "Code"
+  },
+  
+  "contact": {
+    "title_main": "Let's ",
+    "title_sub": "Talk",
+    "subtitle": "Get in touch to discuss project collaborations or professional opportunities",
+    "form": {
+      "label_name": "Name",
+      "placeholder_name": "Your full name",
+      "label_email": "Email",
+      "placeholder_email": "your@email.com",
+      "label_message": "Message",
+      "placeholder_message": "Describe your project or opportunity...",
+      "btn_send": "Send Message",
+      "btn_sending": "Sending...",
+      "status_success": "Message sent successfully!",
+      "status_error": "Error sending. Check if the backend server is running."
+    },
+    "info": {
+      "title": "Collaborate With Me",
+      "github_desc": "Check out my projects and contributions",
+      "git_repo": "Git Repositories",
+      "git_desc": "Including open-source projects",
+      "card_cta_title": "Ready to collaborate?",
+      "card_cta_desc": "Let's create something amazing together using best development practices!",
+      "card_cta_btn": "View Projects"
+    }
+  },
+
+  "footer": {
+    "copy_email": "Copy email",
+    "email_copied": "Copied!",
+    "rights": "All rights reserved.",
+    "developed_with": "Developed with React and Tailwind CSS"
+  }
+
+}

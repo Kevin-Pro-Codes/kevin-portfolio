@@ -2,9 +2,12 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FaCode, FaServer, FaDatabase } from 'react-icons/fa';
 import Container from './Container';
-import { FaHandsClapping} from 'react-icons/fa6';
+import { FaHandsClapping } from 'react-icons/fa6';
+import { useTranslation } from 'react-i18next'; // 1. IMPORTAR O HOOK
 
 const About = () => {
+  const { t } = useTranslation(); // 2. INICIALIZAR A FUNÇÃO t
+
   return (
     <section id="about" className="py-12 md:py-16 bg-black text-white">
       <Container>
@@ -16,14 +19,13 @@ const About = () => {
             className="text-center mb-10 md:mb-12"
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              <span className="text-white">Sobre </span>
+              <span className="text-white">{t('about.title_main')}</span>
               <span className="text-gray-300">
-                Mim
+                {t('about.title_sub')}
               </span>
             </h2>
             <p className="text-gray-300 max-w-2xl mx-auto">
-              Desenvolvedor Full Stack especializado em criar soluções completas, 
-              combinando frontend moderno, backend robusto e modelagem de dados eficiente
+              {t('about.intro')}
             </p>
           </motion.div>
 
@@ -46,41 +48,26 @@ const About = () => {
                   
                   <div className="space-y-4">
                     <h3 className="text-xl md:text-2xl font-bold text-white">
-                      Minha História
+                      {t('about.history_title')}
                     </h3>
                     
                     <div className="space-y-3">
-                      <div className="flex items-start gap-3">
-                        <div className="w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                          <span className="text-white text-sm">✓</span>
+                      {/* Usei um array simples para mapear os 3 itens da história */}
+                      {[1, 2, 3].map((num) => (
+                        <div key={num} className="flex items-start gap-3">
+                          <div className="w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                            <span className="text-white text-sm">✓</span>
+                          </div>
+                          <p className="text-gray-300 text-sm md:text-base text-left">
+                            {t(`about.history_item${num}`)}
+                          </p>
                         </div>
-                        <p className="text-gray-300 text-sm md:text-base text-left">
-                          Comecei na programação por curiosidade e transformei paixão em profissão
-                        </p>
-                      </div>
-                      
-                      <div className="flex items-start gap-3">
-                        <div className="w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                          <span className="text-white text-sm">✓</span>
-                        </div>
-                        <p className="text-gray-300 text-sm md:text-base text-left">
-                          Autodidata com mais de 3 anos construindo soluções do zero
-                        </p>
-                      </div>
-                      
-                      <div className="flex items-start gap-3">
-                        <div className="w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                          <span className="text-white text-sm">✓</span>
-                        </div>
-                        <p className="text-gray-300 text-sm md:text-base text-left">
-                          Apaixonado por resolver problemas complexos com código limpo
-                        </p>
-                      </div>
+                      ))}
                     </div>
                     
                     <div className="pt-4 border-t border-gray-700">
                       <p className="text-gray-400 text-sm italic">
-                        "Cada linha de código é uma oportunidade de criar algo impactante"
+                        {t('about.quote')}
                       </p>
                     </div>
                   </div>
@@ -95,12 +82,11 @@ const About = () => {
               className="max-w-xl mx-auto"
             >
               <h3 className="text-2xl font-bold mb-4 text-white">
-                Minha Abordagem
+                {t('about.approach_title')}
               </h3>
               
               <p className="text-gray-300 mb-6">
-                Acredito que desenvolver software vai além de escrever código - é sobre entender necessidades, 
-                criar experiências e entregar valor real para os usuários finais.
+                {t('about.approach_desc')}
               </p>
 
               <div className="space-y-4 mb-6">
@@ -109,8 +95,8 @@ const About = () => {
                     <FaCode className="text-white text-lg" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-white mb-1">Foco no Usuário</h4>
-                    <p className="text-gray-300">Desenvolvo sempre pensando na experiência final do usuário</p>
+                    <h4 className="font-bold text-white mb-1">{t('about.focus_title')}</h4>
+                    <p className="text-gray-300">{t('about.focus_desc')}</p>
                   </div>
                 </div>
 
@@ -119,8 +105,8 @@ const About = () => {
                     <FaServer className="text-white text-lg" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-white mb-1">Qualidade & Performance</h4>
-                    <p className="text-gray-300">Código otimizado pensando em escalabilidade e manutenção</p>
+                    <h4 className="font-bold text-white mb-1">{t('about.quality_title')}</h4>
+                    <p className="text-gray-300">{t('about.quality_desc')}</p>
                   </div>
                 </div>
 
@@ -129,17 +115,16 @@ const About = () => {
                     <FaDatabase className="text-white text-lg" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-white mb-1">Comunicação Clara</h4>
-                    <p className="text-gray-300">Explico processos técnicos de forma acessível para todos</p>
+                    <h4 className="font-bold text-white mb-1">{t('about.comm_title')}</h4>
+                    <p className="text-gray-300">{t('about.comm_desc')}</p>
                   </div>
                 </div>
               </div>
               
               <div className="bg-gray-800/50 rounded-lg p-4 border border-gray-700">
-                <h4 className="font-bold text-white mb-2">Fora do código:</h4>
+                <h4 className="font-bold text-white mb-2">{t('about.extra_title')}</h4>
                 <p className="text-gray-300 text-sm">
-                  Aprendo constantemente sobre novas tecnologias, acompanho comunidades de desenvolvimento 
-                  e acredito que o melhor software é feito com colaboração e mente aberta.
+                  {t('about.extra_desc')}
                 </p>
               </div>
             </motion.div>

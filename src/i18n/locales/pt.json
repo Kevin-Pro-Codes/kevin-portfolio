@@ -1,0 +1,186 @@
+{
+  "hero": {
+    "welcome": "Olá, seja bem-vindo!",
+    "role_top": "Desenvolvedor",
+    "role_bottom": "Full Stack",
+    "description": "Desenvolvedor Full Stack em React, Angular, Bootstrap, Tailwind, PHP, Node.js, e TypeScript. Criando aplicações completas do frontend ao backend com foco em performance e escalabilidade.",
+    "years_exp": "Anos Exp",
+    "image_alt": "Kevin - Desenvolvedor Full Stack"
+  },
+  "about": {
+    "title_main": "Sobre ",
+    "title_sub": "Mim",
+    "intro": "Desenvolvedor Full Stack especializado em criar soluções completas, combinando frontend moderno, backend robusto e modelagem de dados eficiente",
+    "history_title": "Minha História",
+    "history_item1": "Comecei na programação por curiosidade e transformei paixão em profissão",
+    "history_item2": "Autodidata com mais de 3 anos construindo soluções do zero",
+    "history_item3": "Apaixonado por resolver problemas complexos com código limpo",
+    "quote": "\"Cada linha de código é uma oportunidade de criar algo impactante\"",
+    "approach_title": "Minha Abordagem",
+    "approach_desc": "Acredito que desenvolver software vai além de escrever código - é sobre entender necessidades, criar experiências e entregar valor real para os usuários finais.",
+    "focus_title": "Foco no Usuário",
+    "focus_desc": "Desenvolvo sempre pensando na experiência final do usuário",
+    "quality_title": "Qualidade & Performance",
+    "quality_desc": "Código otimizado pensando em escalabilidade e manutenção",
+    "comm_title": "Comunicação Clara",
+    "comm_desc": "Explico processos técnicos de forma acessível para todos",
+    "extra_title": "Fora do código:",
+    "extra_desc": "Aprendo constantemente sobre novas tecnologias, acompanho comunidades de desenvolvimento e acredito que o melhor software é feito com colaboração e mente aberta."
+  },
+  
+  
+  
+  "closed_source": {
+    "title_part1": "Projetos com ",
+    "title_part2": "Código Fechado",
+    "main_description": "Tenho experiência em diversos projetos com código fonte proprietário que não posso disponibilizar publicamente. Posso demonstrar essas soluções em vídeo chamada ou apresentação personalizada.",
+    "cards": {
+      "demo": {
+        "title": "Demonstração ao Vivo",
+        "desc": "Agende uma vídeo chamada para ver o projeto em funcionamento, fluxos de usuário e funcionalidades principais.",
+        "item1": "Demonstração interativa",
+        "item2": "Q&A em tempo real",
+        "item3": "Screen sharing"
+      },
+      "use_cases": {
+        "title": "Casos de Uso",
+        "desc": "Projetos em produção com casos reais: sistemas internos, dashboards administrativos e automações complexas.",
+        "tag1": "APIs Privadas",
+        "tag2": "Dashboards",
+        "tag3": "Automação",
+        "tag4": "Sistemas Internos"
+      },
+      "architecture": {
+        "title": "Arquitetura & Código",
+        "desc": "Discussão técnica sobre arquitetura, padrões de código, decisões técnicas e soluções implementadas.",
+        "item1": "Code review conceitual",
+        "item2": "Decisões arquiteturais",
+        "item3": "Padrões implementados"
+      }
+    },
+    "trigger_btn": "Solicitar Demonstração em Vídeo",
+    "trigger_hint": "Entrarei em contato para agendar o melhor horário",
+    "form": {
+      "title": "Agendar Demonstração",
+      "label_name": "Nome",
+      "placeholder_name": "Seu nome",
+      "label_email": "Email",
+      "placeholder_email": "seu@email.com",
+      "label_interest": "Interesse Específico",
+      "interest_default": "Selecione o tipo de projeto",
+      "interest_opt1": "Sistemas Backend/APIs",
+      "interest_opt2": "Aplicações Frontend Complexas",
+      "interest_opt3": "Projetos",
+      "interest_opt4": "Automação/DevOps",
+      "interest_opt5": "Dashboards & Analytics",
+      "label_date": "Data Preferencial",
+      "label_time": "Horário Preferencial",
+      "time_default": "Qual horário prefere?",
+      "time_morning": "Manhã (9h-12h)",
+      "time_afternoon": "Tarde (14h-18h)",
+      "time_evening": "Noite (19h-21h)",
+      "submit": "Solicitar Demonstração",
+      "cancel": "Cancelar",
+      "alert_success": "Solicitação de demonstração enviada! Entrarei em contato em breve para agendar."
+    },
+    "footer_lock": "Por questões de confidencialidade, o código fonte não pode ser compartilhado publicamente. A demonstração permite avaliar minhas habilidades técnicas sem expor propriedade intelectual."
+  },
+  "skills": {
+    "title_main": "Minhas ",
+    "title_sub": "Habilidades",
+    "subtitle": "Expertise em desenvolvimento full-stack com foco em versionamento e boas práticas",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "database": "Banco de Dados",
+      "versioning": "Versionamento"
+    },
+    "methodologies": {
+      "title": "Metodologias de Desenvolvimento",
+      "subtitle": "Abordagens e práticas para desenvolvimento de software eficiente e escalável",
+      "card1_title": "React Prático",
+      "card1_desc": "Aplicações funcionais com formulários, navegação e consumo de APIs",
+      "card2_title": "Arquitetura Backend",
+      "card2_desc": "APIs RESTful, autenticação JWT e design patterns escaláveis",
+      "card3_title": "Modelagem de Dados",
+      "card3_desc": "Bancos relacionais e não-relacionais, queries otimizadas"
+    }
+  },
+  "projects": {
+    "title_main": "Projetos ",
+    "title_sub": "Desenvolvidos",
+    "subtitle": "Aplicações modernas desenvolvidas com tecnologias atuais, focadas em performance, usabilidade e design responsivo",
+    "btn_show_more": "Ver mais {{count}} projeto",
+    "btn_show_more_plural": "Ver mais {{count}} projetos",
+    "btn_show_less": "Mostrar menos ({{count}} projetos)",
+    "btn_all_shown": "Todos os {{count}} projetos exibidos",
+    "btn_visible": "Todos os {{count}} projetos estão visíveis",
+    "items": {
+      "greno": {
+        "title": "Greno Rede Social",
+        "description": "Plataforma de rede social com feed de mensagens e perfis de usuário."
+      },
+      "coursin": {
+        "title": "Coursin Plataforma de Cursos",
+        "description": "Plataforma abrangente de aprendizado online com cursos, acompanhamento de progresso, certificados e conteúdo interativo."
+      },
+      "halo": {
+        "title": "Halo Plataforma de Trading",
+        "description": "Plataforma avançada de trading de criptomoedas com gráficos em tempo real, rastreamento de portfólio e transações seguras."
+      },
+      "modelle": {
+        "title": "Modelle Plataforma de Moda",
+        "description": "Plataforma moderna de moda with product 3D views, virtual try-ons, and personalized recommendations."
+      },
+      "newfoundland": {
+        "title": "Newfoundland Turismo de Ilha Canadense",
+        "description": "Guia de viagem interativo para Newfoundland com atrações, mapas, sistema de reservas e experiências locais."
+      },
+      "colorify": {
+        "title": "Colorify: Paleta de Cores",
+        "description": "Gerador moderno de paletas de cores com pré-visualização em tempo real, extração de códigos de cor e opções de exportação para designers e desenvolvedores."
+      }
+    }
+  },
+  "buttons": {
+    "contact": "Contate-me",
+    "github": "GitHub",
+    "live_demo": "Live Demo",
+    "code": "Código"
+  },
+
+  "contact": {
+    "title_main": "Vamos ",
+    "title_sub": "Conversar",
+    "subtitle": "Entre em contato para discutirmos colaboração em projetos ou oportunidades profissionais",
+    "form": {
+      "label_name": "Nome",
+      "placeholder_name": "Seu nome completo",
+      "label_email": "Email",
+      "placeholder_email": "seu@email.com",
+      "label_message": "Mensagem",
+      "placeholder_message": "Descreva seu projeto ou oportunidade...",
+      "btn_send": "Enviar Mensagem",
+      "btn_sending": "Enviando...",
+      "status_success": "Mensagem enviada com sucesso!",
+      "status_error": "Erro ao enviar. Verifique se o servidor backend está ligado."
+    },
+    "info": {
+      "title": "Colabore Comigo",
+      "github_desc": "Veja meus projetos e contribuições",
+      "git_repo": "Git Repositórios",
+      "git_desc": "Incluindo projetos open-source",
+      "card_cta_title": "Pronto para colaborar?",
+      "card_cta_desc": "Vamos criar algo incrível juntos usando as melhores práticas de desenvolvimento!",
+      "card_cta_btn": "Ver Projetos"
+    }
+  },
+  
+  "footer": {
+    "copy_email": "Copiar e-mail",
+    "email_copied": "Copiado!",
+    "rights": "Todos os direitos reservados.",
+    "developed_with": "Desenvolvido com React e Tailwind CSS"
+  }
+
+}
