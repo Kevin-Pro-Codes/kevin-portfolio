@@ -5,7 +5,16 @@ export default async function handler(req, res) {
     return res.status(405).json({ message: 'Method not allowed' });
   }
 
-  const { name, email, message } = req.body;
+  // 1. Pegamos todos os possíveis campos de ambos os formulários
+  const { 
+    name, 
+    email, 
+    message, 
+    projectInterest, 
+    preferredDate, 
+    preferredTime, 
+    subject 
+  } = req.body;
 
   const transporter = nodemailer.createTransport({
     service: 'gmail',
@@ -20,8 +29,19 @@ export default async function handler(req, res) {
       from: process.env.EMAIL_USER,
       to: process.env.EMAIL_USER,
       replyTo: email,
-      subject: `New Message from ${name}`,
-      text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
+      // 2. Se vier um subject específico (da Demo), usamos ele. Se não, usamos o padrão.
+      subject: subject || `New Message from ${name}`, 
+      // 3. Montamos o texto de forma inteligente
+      text: `
+        Nome: ${name}
+        Email: ${email}
+        ${projectInterest ? `Interesse: ${projectInterest}` : ''}
+        ${preferredDate ? `Data Sugerida: ${preferredDate}` : ''}
+        ${preferredTime ? `Horário Sugerido: ${preferredTime}` : ''}
+
+        Mensagem:
+        ${message || 'Sem mensagem adicional.'}
+      `.trim(), // O .trim() limpa espaços vazios se os campos de demo não existirem
     });
 
     return res.status(200).json({ message: 'Email sent successfully!' });
