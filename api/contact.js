@@ -1,11 +1,43 @@
 import nodemailer from 'nodemailer';
 
+// Memória temporária para guardar os IPs (Funciona bem no vercel dev local)
+// Nota: Em produção (Vercel online), isso reseta quando a função dorme.
+const rateLimitMap = new Map();
+
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
     return res.status(405).json({ message: 'Method not allowed' });
   }
 
-  // 1. Pegamos todos os possíveis campos de ambos os formulários
+  // --- LÓGICA DE RATE LIMIT (20 MINUTOS) ---
+  const ip = req.headers['x-forwarded-for'] || req.socket.remoteAddress;
+  const now = Date.now();
+  const WINDOW_MS = 20 * 60 * 1000; // 20 minutos em milissegundos
+  const MAX_REQUESTS = 2; // Limite de 3 envios
+
+  if (!rateLimitMap.has(ip)) {
+    rateLimitMap.set(ip, { count: 1, lastReset: now });
+  } else {
+    const userData = rateLimitMap.get(ip);
+
+    // Se passou mais de 20 min, reseta o contador do cara
+    if (now - userData.lastReset > WINDOW_MS) {
+      userData.count = 1;
+      userData.lastReset = now;
+    } else {
+      userData.count++;
+    }
+
+    // Se for a 4ª tentativa em menos de 20 min, bloqueia
+    if (userData.count > MAX_REQUESTS) {
+      const timeLeft = Math.ceil((WINDOW_MS - (now - userData.lastReset)) / 1000 / 60);
+      return res.status(429).json({ 
+        message: `Muitas tentativas. Por favor, aguarde ${timeLeft} minutos antes de tentar novamente.` 
+      });
+    }
+  }
+  // --- FIM DA LÓGICA DE SEGURANÇA ---
+
   const { 
     name, 
     email, 
@@ -29,9 +61,7 @@ export default async function handler(req, res) {
       from: process.env.EMAIL_USER,
       to: process.env.EMAIL_USER,
       replyTo: email,
-      // 2. Se vier um subject específico (da Demo), usamos ele. Se não, usamos o padrão.
       subject: subject || `New Message from ${name}`, 
-      // 3. Montamos o texto de forma inteligente
       text: `
         Nome: ${name}
         Email: ${email}
@@ -41,7 +71,7 @@ export default async function handler(req, res) {
 
         Mensagem:
         ${message || 'Sem mensagem adicional.'}
-      `.trim(), // O .trim() limpa espaços vazios se os campos de demo não existirem
+      `.trim(),
     });
 
     return res.status(200).json({ message: 'Email sent successfully!' });
