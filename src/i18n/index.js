@@ -3,7 +3,7 @@ import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import pt from './locales/pt.json';
 import en from './locales/en.json';
-
+import './i18n';
 
 i18n
   .use(LanguageDetector) // Detecta o idioma do navegador do usuário
