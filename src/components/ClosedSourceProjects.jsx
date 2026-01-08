@@ -40,6 +40,7 @@ const ClosedSourceProjects = () => {
         subject: "Closed Source Demo Request" // Identificador para o seu backend
       });
 
+      
       if (response.status === 200) {
         // Feedback de sucesso
         setStatus({ type: 'success', msg: t('closed_source.form.alert_success') });
@@ -58,14 +59,25 @@ const ClosedSourceProjects = () => {
         }, 2500);
       }
     } catch (error) {
-      console.error('Demo Request Error:', error);
-      setStatus({ 
-        type: 'error', 
-        msg: t('contact.form.status_error') // Reutilizando sua chave de erro global
-      });
-    } finally {
-      setLoading(false);
-    }
+  console.error('Demo Request Error:', error);
+
+  // 1. Verificamos se o servidor enviou uma resposta de erro (como o 429)
+  if (error.response && error.response.data && error.response.data.message) {
+    // 2. Se o backend enviou uma mensagem (ex: "Aguarde 20 min"), usamos ela!
+    setStatus({ 
+      type: 'error', 
+      msg: error.response.data.message 
+    });
+  } else {
+    // 3. Caso seja um erro de rede ou o servidor caia (Erro 500 sem mensagem), usamos o seu padrão
+    setStatus({ 
+      type: 'error', 
+      msg: t('contact.form.status_error') 
+    });
+  }
+} finally {
+  setLoading(false);
+}
   };
 
   const handleCancel = () => {
