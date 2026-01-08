@@ -25,29 +25,37 @@ const Contact = () => {
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    setLoading(true);
-    setStatus({ type: '', msg: '' });
+  e.preventDefault();
+  setLoading(true);
+  setStatus({ type: '', msg: '' });
 
-    try {
-      const response = await axios.post('/api/contact', formData);
+  try {
+    const response = await axios.post('/api/contact', formData);
 
-      if (response.status === 200) {
-        // 3. Sucesso traduzido
-        setStatus({ type: 'success', msg: t('contact.form.status_success') });
-        setFormData({ name: '', email: '', message: '' }); 
-      }
-    } catch (error) {
-      console.error('Submission Error:', error);
-      // 4. Erro traduzido
+    if (response.status === 200) {
+      setStatus({ type: 'success', msg: t('contact.form.status_success') });
+      setFormData({ name: '', email: '', message: '' }); 
+    }
+  } catch (error) {
+    console.error('Submission Error:', error);
+
+    // Verifica se o erro veio do Rate Limit (status 429) ou tem uma mensagem do servidor
+    if (error.response && error.response.data && error.response.data.message) {
+      setStatus({ 
+        type: 'error', 
+        msg: error.response.data.message // Exibe "Aguarde X minutos"
+      });
+    } else {
+      // Caso contrário, usa a tradução padrão do seu JSON
       setStatus({ 
         type: 'error', 
         msg: t('contact.form.status_error') 
       });
-    } finally {
-      setLoading(false);
     }
-  };
+  } finally {
+    setLoading(false);
+  }
+};
 
   return (
     <section id="contact" className="py-12 md:py-16 bg-gradient-to-br from-gray-50 to-gray-100">
